@@ -86,6 +86,17 @@ def mask_sensitive_data(config, sensitive_keys=SENSITIVE_FIELDS):
             masked_config[key] = "************"
     return masked_config
 
+def load_metadata_template(template_path):
+  """Load the metadata template from the template path."""
+  if not os.path.exists(template_path):
+    logger.error(f"Metadata template file not found: {template_path}")
+    raise FileNotFoundError(f"Metadata template file not found: {template_path}")
+
+  with open(template_path, "r") as f:
+    template = json.load(f)
+    logger.info(f"Loaded metadata template from {template_path}")
+  return template
+
 def initialize_environment(config_path="config/zenodo_config.json", fetch_path="config/default_settings.json"):
     """Simplified function to initialize environment, load configurations, and validate."""
     # Load environment variables
@@ -114,8 +125,10 @@ def initialize_environment(config_path="config/zenodo_config.json", fetch_path="
             logging.StreamHandler()
         ]
     )
+    template_path = fetch_settings.get("template_path", "config/metadata_template.json")
+    metadata_template = load_metadata_template(template_path)
 
     # Dump configuration for debugging
     dump_config(zenodo_config, "Final Zenodo Configuration")
 
-    return zenodo_config, fetch_settings
+    return zenodo_config, fetch_settings, metadata_template

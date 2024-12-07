@@ -1,0 +1,35 @@
+{
+  "access": {
+    "record": true,
+    "files": true
+  },
+  "files": {
+    "enabled": true
+  },
+  "metadata": {
+    "publisher": true,
+    "publication_date": true,
+    "resource_type": {
+      "id": true
+    },
+    "title": true,    
+    "subjects": true,
+    "creators": [
+      {
+        "person_or_org": {
+          "family_name": true,
+          "given_name": true,
+          "type": true,
+          "identifiers": true
+        },
+        "affiliations": [
+          {
+            "id": true,
+            "name": true
+          }
+        ]
+      }
+    ]
+  },
+  "custom_fields": { "meeting:meeting": true }
+}

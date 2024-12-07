@@ -1,7 +1,7 @@
 {
   "fetch_metadata": {
     "output_dir": "./output", 
-    "log_file": "./logs/fetch_records.log", 
+    "template_path": "config/metadata_template.json",
     "dry_run": false
   }
 }
