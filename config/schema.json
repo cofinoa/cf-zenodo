@@ -1,0 +1,47 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+      "concept_id": {
+          "type": "string",
+          "description": "Unique identifier for the concept record in Zenodo."
+      },
+      "title": {
+          "type": "string",
+          "description": "Title of the record."
+      },
+      "description": {
+          "type": "string",
+          "description": "Description of the record."
+      },
+      "doi": {
+          "type": "string",
+          "description": "Digital Object Identifier (DOI) for the record.",
+          "pattern": "^10\\.\\d{4,9}/[-._;()/:a-zA-Z0-9]+$"
+      },
+      "version": {
+          "type": "string",
+          "description": "Version number of the record (e.g., v1.0, v1.1)."
+      },
+      "keywords": {
+          "type": "array",
+          "description": "List of keywords associated with the record.",
+          "items": {
+              "type": "string"
+          }
+      },
+      "creators": {
+          "type": "array",
+          "description": "List of creators for the record.",
+          "items": {
+              "type": "object",
+              "properties": {
+                  "name": { "type": "string" },
+                  "affiliation": { "type": "string" }
+              },
+              "required": ["name"]
+          }
+      }
+  },
+  "required": ["concept_id", "title", "description", "doi", "version", "creators"]
+}

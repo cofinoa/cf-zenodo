@@ -1,0 +1,7 @@
+{
+  "base_url": "https://zenodo.org/api",
+  "access_token": null,  
+  "community_id": "cfconventions",
+  "max_records_per_page": 1000,                    
+  "retry_attempts": 3                            
+}

@@ -1,0 +1,15 @@
+{
+  "fetch_metadata": {
+      "output_dir": "records/{concept_id}/metadata",
+      "log_file": "logs/fetch_metadata.log"
+  },
+  "sync_depositions": {
+      "files_dir": "records/{concept_id}/files",
+      "metadata_dir": "records/{concept_id}/metadata",
+      "log_file": "logs/sync_depositions.log"
+  },
+  "validate_metadata": {
+      "schema_file": "config/schema.json",
+      "log_file": "logs/validate_metadata.log"
+  }
+}
