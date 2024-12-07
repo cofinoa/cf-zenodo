@@ -1,0 +1,347 @@
+{
+  "id": "14270689",
+  "created": "2024-12-04T17:45:02.622473+00:00",
+  "updated": "2024-12-04T17:45:02.965502+00:00",
+  "links": {
+    "self": "https://zenodo.org/api/records/14270689",
+    "self_html": "https://zenodo.org/records/14270689",
+    "doi": "https://doi.org/10.5281/zenodo.14270689",
+    "self_doi": "https://doi.org/10.5281/zenodo.14270689",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.14270689",
+    "parent": "https://zenodo.org/api/records/14270688",
+    "parent_html": "https://zenodo.org/records/14270688",
+    "parent_doi": "https://doi.org/10.5281/zenodo.14270688",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.14270688",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:14270689/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:14270689/sequence/default",
+    "files": "https://zenodo.org/api/records/14270689/files",
+    "media_files": "https://zenodo.org/api/records/14270689/media-files",
+    "thumbnails": {
+      "10": "https://zenodo.org/api/iiif/record:14270689:IPCC_Atlas_gutierrez.pdf/full/^10,/0/default.jpg",
+      "50": "https://zenodo.org/api/iiif/record:14270689:IPCC_Atlas_gutierrez.pdf/full/^50,/0/default.jpg",
+      "100": "https://zenodo.org/api/iiif/record:14270689:IPCC_Atlas_gutierrez.pdf/full/^100,/0/default.jpg",
+      "250": "https://zenodo.org/api/iiif/record:14270689:IPCC_Atlas_gutierrez.pdf/full/^250,/0/default.jpg",
+      "750": "https://zenodo.org/api/iiif/record:14270689:IPCC_Atlas_gutierrez.pdf/full/^750,/0/default.jpg",
+      "1200": "https://zenodo.org/api/iiif/record:14270689:IPCC_Atlas_gutierrez.pdf/full/^1200,/0/default.jpg"
+    },
+    "archive": "https://zenodo.org/api/records/14270689/files-archive",
+    "archive_media": "https://zenodo.org/api/records/14270689/media-files-archive",
+    "latest": "https://zenodo.org/api/records/14270689/versions/latest",
+    "latest_html": "https://zenodo.org/records/14270689/latest",
+    "versions": "https://zenodo.org/api/records/14270689/versions",
+    "draft": "https://zenodo.org/api/records/14270689/draft",
+    "reserve_doi": "https://zenodo.org/api/records/14270689/draft/pids/doi",
+    "access_links": "https://zenodo.org/api/records/14270689/access/links",
+    "access_grants": "https://zenodo.org/api/records/14270689/access/grants",
+    "access_users": "https://zenodo.org/api/records/14270689/access/users",
+    "access_request": "https://zenodo.org/api/records/14270689/access/request",
+    "access": "https://zenodo.org/api/records/14270689/access",
+    "communities": "https://zenodo.org/api/records/14270689/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/14270689/communities-suggestions",
+    "requests": "https://zenodo.org/api/records/14270689/requests"
+  },
+  "revision_id": 4,
+  "parent": {
+    "id": "14270688",
+    "access": {
+      "owned_by": {
+        "user": "1207726"
+      },
+      "settings": {
+        "allow_user_requests": false,
+        "allow_guest_requests": false,
+        "accept_conditions_text": null,
+        "secret_link_expiration": 0
+      }
+    },
+    "communities": {
+      "ids": [
+        "bfee86a1-51c3-4b09-b444-d99a5573f2d3"
+      ],
+      "default": "bfee86a1-51c3-4b09-b444-d99a5573f2d3",
+      "entries": [
+        {
+          "id": "bfee86a1-51c3-4b09-b444-d99a5573f2d3",
+          "created": "2024-06-06T20:24:13.574426+00:00",
+          "updated": "2024-10-24T11:14:21.111863+00:00",
+          "links": {},
+          "revision_id": 8,
+          "slug": "cfconventions",
+          "metadata": {
+            "title": "CF Metadata Conventions",
+            "description": "The CF metadata conventions define metadata that provide a definitive description of what the data in each variable represents, and the spatial and temporal properties of the data, to promote the processing and sharing of files.",
+            "curation_policy": "<h3>CF Community on Zenodo Curation Policy</h3>\n<p>The <strong>CF Community on Zenodo</strong> is committed to sharing high-quality resources that align with the&nbsp;<strong>CF Metadata Conventions</strong>. This policy outlines the submission, review, and approval process for ensuring that all content adheres to community standards.</p>\n<h4>1. <strong>Submission Criteria</strong></h4>\n<p>Submissions must directly relate to the CF conventions, including:</p>\n<ul>\n<li>Datasets adhering to CF standards.</li>\n<li>Documentation, guides, or tools supporting CF usage.</li>\n<li>Research or reports that apply CF conventions.</li>\n<li>Materials from <strong>workshops, meetings, or conferences</strong> (e.g., presentations, recordings, agendas, or summaries).</li>\n</ul>\n<p>Each submission must include clear record metadata and descriptions to ensure proper identification and discoverability.</p>\n<h4>2. <strong>Review Process</strong></h4>\n<p>Submissions will undergo a <strong>curation process</strong>:</p>\n<ul>\n<li><strong>Initial Submission</strong>: Contributors provide a draft with relevant metadata.</li>\n<li><strong>Curator Review</strong>: Curators will assess relevance, metadata clarity, adherence to CF standards, and data integrity.</li>\n<li><strong>Revisions</strong>: If needed, contributors may be asked to revise their submission.</li>\n<li><strong>Approval</strong>: Once reviewed and approved, the submission will be published and publicly accessible.</li>\n</ul>\n<h4>3. <strong>Versioning and Updates</strong></h4>\n<p>Contributors can submit updated versions, with clear versioning and changelogs. Previous versions will be retained for reference.</p>\n<h4>4. <strong>Licensing</strong></h4>\n<p>Submissions must include a clear license, preferably open, to promote sharing and collaboration.</p>\n<h4>5. <strong>Content Integrity</strong></h4>\n<p>The community reserves the right to <strong>remove or retract</strong> content that:</p>\n<ul>\n<li>Contravenes CF conventions.</li>\n<li>Contains significant errors or violations of intellectual property.</li>\n</ul>\n<h4>6. <strong>Community Feedback</strong></h4>\n<p>Members are encouraged to provide feedback on submissions to promote best practices and improvements within the community.</p>\n<h3>Contact</h3>\n<p>For any questions or assistance with submissions, please contact the CF Community at <a href=\"https://cfconventions.org/discussion\">https://cfconventions.org/discussion</a>.</p>",
+            "page": "<p>The&nbsp;<strong>CF (Climate and Forecast) Metadata Conventions </strong>are designed to promote the processing and sharing of files created with the&nbsp;netCDF API. The conventions define metadata that provide a definitive description of what the data in each variable represents, and the spatial and temporal properties of the data. This enables users of data from different sources to decide which quantities are comparable, and facilitates building applications with powerful extraction, regridding, and display capabilities. The CF convention includes a standard name table, which defines strings that identify physical quantities.</p>\n<p>The <strong>CF Community on Zenodo</strong> is a collaborative space for sharing and publishing datasets, documentation, and tools that adhere to CF metadata conventions. Here, community members can contribute resources that advance the adoption and implementation of these standards, ensuring that the community continues to grow and evolve.</p>\n<p>We encourage all members to actively participate, share knowledge, and contribute to the CF conventions to promote best practices in scientific data sharing.</p>\n<p>&nbsp;</p>",
+            "type": {
+              "id": "organization"
+            },
+            "website": "https://cfconventions.org"
+          },
+          "access": {
+            "visibility": "public",
+            "members_visibility": "public",
+            "member_policy": "open",
+            "record_submission_policy": "open",
+            "review_policy": "closed"
+          },
+          "custom_fields": {},
+          "deletion_status": {
+            "is_deleted": false,
+            "status": "P"
+          },
+          "children": {
+            "allow": false
+          }
+        }
+      ]
+    },
+    "pids": {
+      "doi": {
+        "identifier": "10.5281/zenodo.14270688",
+        "provider": "datacite",
+        "client": "datacite"
+      }
+    }
+  },
+  "versions": {
+    "is_latest": true,
+    "index": 1
+  },
+  "is_published": true,
+  "is_draft": false,
+  "pids": {
+    "doi": {
+      "identifier": "10.5281/zenodo.14270689",
+      "provider": "datacite",
+      "client": "datacite"
+    },
+    "oai": {
+      "identifier": "oai:zenodo.org:14270689",
+      "provider": "oai"
+    }
+  },
+  "metadata": {
+    "resource_type": {
+      "id": "presentation",
+      "title": {
+        "de": "Präsentation",
+        "en": "Presentation"
+      }
+    },
+    "creators": [
+      {
+        "person_or_org": {
+          "type": "personal",
+          "name": "Gutiérrez Llorente, José Manuel",
+          "given_name": "José Manuel",
+          "family_name": "Gutiérrez Llorente",
+          "identifiers": [
+            {
+              "identifier": "0000-0002-2766-6297",
+              "scheme": "orcid"
+            }
+          ]
+        },
+        "role": {
+          "id": "producer",
+          "title": {
+            "de": "ProduzentIn",
+            "en": "Producer"
+          }
+        }
+      }
+    ],
+    "title": "Provenance for (complex) climate products: The experience from the IPCC Interactive Atlas",
+    "publisher": "Zenodo",
+    "publication_date": "2024-09-17",
+    "subjects": [
+      {
+        "subject": "2024 CF Workshop"
+      }
+    ],
+    "rights": [
+      {
+        "id": "cc-by-4.0",
+        "title": {
+          "en": "Creative Commons Attribution 4.0 International"
+        },
+        "description": {
+          "en": "The Creative Commons Attribution license allows re-distribution and re-use of a licensed work on the condition that the creator is appropriately credited."
+        },
+        "icon": "cc-by-icon",
+        "props": {
+          "url": "https://creativecommons.org/licenses/by/4.0/legalcode",
+          "scheme": "spdx"
+        }
+      }
+    ],
+    "description": "<p>Provenance for (complex) climate products: The experience from the IPCC Interactive Atlas</p>"
+  },
+  "custom_fields": {
+    "meeting:meeting": {
+      "dates": "17-20 September 2024",
+      "place": "Swedish Meteorological and Hydrological Institute (SMHI), Norrköping, Sweden",
+      "title": "2024 CF Workshop",
+      "url": "https://cfconventions.org/Meetings/2024-Workshop.html"
+    }
+  },
+  "access": {
+    "record": "public",
+    "files": "public",
+    "embargo": {
+      "active": false,
+      "reason": null
+    },
+    "status": "open"
+  },
+  "files": {
+    "enabled": true,
+    "order": [],
+    "count": 1,
+    "total_bytes": 4387224,
+    "entries": {
+      "IPCC_Atlas_gutierrez.pdf": {
+        "id": "1658f567-906a-4cce-bef6-3c811cee54d4",
+        "checksum": "md5:e2d9006646679b00b1b1c015d646f595",
+        "ext": "pdf",
+        "size": 4387224,
+        "mimetype": "application/pdf",
+        "storage_class": "L",
+        "key": "IPCC_Atlas_gutierrez.pdf",
+        "metadata": {},
+        "access": {
+          "hidden": false
+        },
+        "links": {
+          "self": "https://zenodo.org/api/records/14270689/files/IPCC_Atlas_gutierrez.pdf",
+          "content": "https://zenodo.org/api/records/14270689/files/IPCC_Atlas_gutierrez.pdf/content",
+          "iiif_canvas": "https://zenodo.org/api/iiif/record:14270689/canvas/IPCC_Atlas_gutierrez.pdf",
+          "iiif_base": "https://zenodo.org/api/iiif/record:14270689:IPCC_Atlas_gutierrez.pdf",
+          "iiif_info": "https://zenodo.org/api/iiif/record:14270689:IPCC_Atlas_gutierrez.pdf/info.json",
+          "iiif_api": "https://zenodo.org/api/iiif/record:14270689:IPCC_Atlas_gutierrez.pdf/full/full/0/default.png"
+        }
+      }
+    }
+  },
+  "media_files": {
+    "enabled": true,
+    "order": [],
+    "count": 1,
+    "total_bytes": 0,
+    "entries": {
+      "IPCC_Atlas_gutierrez.pdf.ptif": {
+        "id": "86eaeecf-85c3-4344-89cb-e6c34364b029",
+        "ext": "ptif",
+        "size": 0,
+        "mimetype": "application/octet-stream",
+        "storage_class": "L",
+        "key": "IPCC_Atlas_gutierrez.pdf.ptif",
+        "metadata": null,
+        "access": {
+          "hidden": true
+        },
+        "processor": {
+          "type": "image-tiles",
+          "status": "finished",
+          "source_file_id": "1658f567-906a-4cce-bef6-3c811cee54d4"
+        },
+        "links": {
+          "self": "https://zenodo.org/api/records/14270689/files/IPCC_Atlas_gutierrez.pdf.ptif",
+          "content": "https://zenodo.org/api/records/14270689/files/IPCC_Atlas_gutierrez.pdf.ptif/content"
+        }
+      }
+    }
+  },
+  "status": "published",
+  "deletion_status": {
+    "is_deleted": false,
+    "status": "P"
+  },
+  "stats": {
+    "this_version": {
+      "views": 26,
+      "unique_views": 26,
+      "downloads": 28,
+      "unique_downloads": 20,
+      "data_volume": 122842272.0
+    },
+    "all_versions": {
+      "views": 26,
+      "unique_views": 26,
+      "downloads": 28,
+      "unique_downloads": 20,
+      "data_volume": 122842272.0
+    }
+  },
+  "swh": {},
+  "ui": {
+    "publication_date_l10n_medium": "Sep 17, 2024",
+    "publication_date_l10n_long": "September 17, 2024",
+    "created_date_l10n_long": "December 4, 2024",
+    "updated_date_l10n_long": "December 4, 2024",
+    "resource_type": {
+      "id": "presentation",
+      "title_l10n": "Presentation"
+    },
+    "custom_fields": {
+      "meeting:meeting": {
+        "dates": "17-20 September 2024",
+        "place": "Swedish Meteorological and Hydrological Institute (SMHI), Norrköping, Sweden",
+        "title": "2024 CF Workshop",
+        "url": "https://cfconventions.org/Meetings/2024-Workshop.html"
+      }
+    },
+    "conference": {
+      "dates": "17-20 September 2024",
+      "place": "Swedish Meteorological and Hydrological Institute (SMHI), Norrköping, Sweden",
+      "title": "2024 CF Workshop",
+      "url": "https://cfconventions.org/Meetings/2024-Workshop.html"
+    },
+    "access_status": {
+      "id": "open",
+      "title_l10n": "Open",
+      "description_l10n": "The record and files are publicly accessible.",
+      "icon": "unlock",
+      "embargo_date_l10n": null,
+      "message_class": ""
+    },
+    "creators": {
+      "creators": [
+        {
+          "person_or_org": {
+            "type": "personal",
+            "name": "Gutiérrez Llorente, José Manuel",
+            "given_name": "José Manuel",
+            "family_name": "Gutiérrez Llorente",
+            "identifiers": [
+              {
+                "identifier": "0000-0002-2766-6297",
+                "scheme": "orcid"
+              }
+            ]
+          },
+          "role": {
+            "id": "producer",
+            "title": "Producer"
+          }
+        }
+      ],
+      "affiliations": []
+    },
+    "description_stripped": "Provenance for (complex) climate products: The experience from the IPCC Interactive Atlas",
+    "version": "v1",
+    "rights": [
+      {
+        "id": "cc-by-4.0",
+        "title_l10n": "Creative Commons Attribution 4.0 International",
+        "description_l10n": "The Creative Commons Attribution license allows re-distribution and re-use of a licensed work on the condition that the creator is appropriately credited.",
+        "icon": "cc-by-icon",
+        "props": {
+          "url": "https://creativecommons.org/licenses/by/4.0/legalcode",
+          "scheme": "spdx"
+        }
+      }
+    ],
+    "is_draft": false
+  }
+}

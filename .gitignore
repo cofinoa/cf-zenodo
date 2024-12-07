@@ -3,3 +3,6 @@ __pycache__/
 
 # Sensitive data going to the file
 .env
+#ignore
+logs/
+output/

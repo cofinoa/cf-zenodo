@@ -1,0 +1,1552 @@
+{
+  "id": "14275572",
+  "created": "2024-12-04T12:35:50.747536+00:00",
+  "updated": "2024-12-04T12:35:51.163002+00:00",
+  "links": {
+    "self": "https://zenodo.org/api/records/14275572",
+    "self_html": "https://zenodo.org/records/14275572",
+    "doi": "https://doi.org/10.5281/zenodo.14275572",
+    "self_doi": "https://doi.org/10.5281/zenodo.14275572",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.14275572",
+    "parent": "https://zenodo.org/api/records/14274886",
+    "parent_html": "https://zenodo.org/records/14274886",
+    "parent_doi": "https://doi.org/10.5281/zenodo.14274886",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.14274886",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:14275572/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:14275572/sequence/default",
+    "files": "https://zenodo.org/api/records/14275572/files",
+    "media_files": "https://zenodo.org/api/records/14275572/media-files",
+    "thumbnails": {
+      "10": "https://zenodo.org/api/iiif/record:14275572:cf-conventions.pdf/full/^10,/0/default.jpg",
+      "50": "https://zenodo.org/api/iiif/record:14275572:cf-conventions.pdf/full/^50,/0/default.jpg",
+      "100": "https://zenodo.org/api/iiif/record:14275572:cf-conventions.pdf/full/^100,/0/default.jpg",
+      "250": "https://zenodo.org/api/iiif/record:14275572:cf-conventions.pdf/full/^250,/0/default.jpg",
+      "750": "https://zenodo.org/api/iiif/record:14275572:cf-conventions.pdf/full/^750,/0/default.jpg",
+      "1200": "https://zenodo.org/api/iiif/record:14275572:cf-conventions.pdf/full/^1200,/0/default.jpg"
+    },
+    "archive": "https://zenodo.org/api/records/14275572/files-archive",
+    "archive_media": "https://zenodo.org/api/records/14275572/media-files-archive",
+    "latest": "https://zenodo.org/api/records/14275572/versions/latest",
+    "latest_html": "https://zenodo.org/records/14275572/latest",
+    "versions": "https://zenodo.org/api/records/14275572/versions",
+    "draft": "https://zenodo.org/api/records/14275572/draft",
+    "reserve_doi": "https://zenodo.org/api/records/14275572/draft/pids/doi",
+    "access_links": "https://zenodo.org/api/records/14275572/access/links",
+    "access_grants": "https://zenodo.org/api/records/14275572/access/grants",
+    "access_users": "https://zenodo.org/api/records/14275572/access/users",
+    "access_request": "https://zenodo.org/api/records/14275572/access/request",
+    "access": "https://zenodo.org/api/records/14275572/access",
+    "communities": "https://zenodo.org/api/records/14275572/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/14275572/communities-suggestions",
+    "requests": "https://zenodo.org/api/records/14275572/requests"
+  },
+  "revision_id": 4,
+  "parent": {
+    "id": "14274886",
+    "access": {
+      "owned_by": {
+        "user": "26191"
+      },
+      "settings": {
+        "allow_user_requests": false,
+        "allow_guest_requests": false,
+        "accept_conditions_text": null,
+        "secret_link_expiration": 0
+      }
+    },
+    "communities": {
+      "ids": [
+        "bfee86a1-51c3-4b09-b444-d99a5573f2d3"
+      ],
+      "default": "bfee86a1-51c3-4b09-b444-d99a5573f2d3",
+      "entries": [
+        {
+          "id": "bfee86a1-51c3-4b09-b444-d99a5573f2d3",
+          "created": "2024-06-06T20:24:13.574426+00:00",
+          "updated": "2024-10-24T11:14:21.111863+00:00",
+          "links": {},
+          "revision_id": 8,
+          "slug": "cfconventions",
+          "metadata": {
+            "title": "CF Metadata Conventions",
+            "description": "The CF metadata conventions define metadata that provide a definitive description of what the data in each variable represents, and the spatial and temporal properties of the data, to promote the processing and sharing of files.",
+            "curation_policy": "<h3>CF Community on Zenodo Curation Policy</h3>\n<p>The <strong>CF Community on Zenodo</strong> is committed to sharing high-quality resources that align with the&nbsp;<strong>CF Metadata Conventions</strong>. This policy outlines the submission, review, and approval process for ensuring that all content adheres to community standards.</p>\n<h4>1. <strong>Submission Criteria</strong></h4>\n<p>Submissions must directly relate to the CF conventions, including:</p>\n<ul>\n<li>Datasets adhering to CF standards.</li>\n<li>Documentation, guides, or tools supporting CF usage.</li>\n<li>Research or reports that apply CF conventions.</li>\n<li>Materials from <strong>workshops, meetings, or conferences</strong> (e.g., presentations, recordings, agendas, or summaries).</li>\n</ul>\n<p>Each submission must include clear record metadata and descriptions to ensure proper identification and discoverability.</p>\n<h4>2. <strong>Review Process</strong></h4>\n<p>Submissions will undergo a <strong>curation process</strong>:</p>\n<ul>\n<li><strong>Initial Submission</strong>: Contributors provide a draft with relevant metadata.</li>\n<li><strong>Curator Review</strong>: Curators will assess relevance, metadata clarity, adherence to CF standards, and data integrity.</li>\n<li><strong>Revisions</strong>: If needed, contributors may be asked to revise their submission.</li>\n<li><strong>Approval</strong>: Once reviewed and approved, the submission will be published and publicly accessible.</li>\n</ul>\n<h4>3. <strong>Versioning and Updates</strong></h4>\n<p>Contributors can submit updated versions, with clear versioning and changelogs. Previous versions will be retained for reference.</p>\n<h4>4. <strong>Licensing</strong></h4>\n<p>Submissions must include a clear license, preferably open, to promote sharing and collaboration.</p>\n<h4>5. <strong>Content Integrity</strong></h4>\n<p>The community reserves the right to <strong>remove or retract</strong> content that:</p>\n<ul>\n<li>Contravenes CF conventions.</li>\n<li>Contains significant errors or violations of intellectual property.</li>\n</ul>\n<h4>6. <strong>Community Feedback</strong></h4>\n<p>Members are encouraged to provide feedback on submissions to promote best practices and improvements within the community.</p>\n<h3>Contact</h3>\n<p>For any questions or assistance with submissions, please contact the CF Community at <a href=\"https://cfconventions.org/discussion\">https://cfconventions.org/discussion</a>.</p>",
+            "page": "<p>The&nbsp;<strong>CF (Climate and Forecast) Metadata Conventions </strong>are designed to promote the processing and sharing of files created with the&nbsp;netCDF API. The conventions define metadata that provide a definitive description of what the data in each variable represents, and the spatial and temporal properties of the data. This enables users of data from different sources to decide which quantities are comparable, and facilitates building applications with powerful extraction, regridding, and display capabilities. The CF convention includes a standard name table, which defines strings that identify physical quantities.</p>\n<p>The <strong>CF Community on Zenodo</strong> is a collaborative space for sharing and publishing datasets, documentation, and tools that adhere to CF metadata conventions. Here, community members can contribute resources that advance the adoption and implementation of these standards, ensuring that the community continues to grow and evolve.</p>\n<p>We encourage all members to actively participate, share knowledge, and contribute to the CF conventions to promote best practices in scientific data sharing.</p>\n<p>&nbsp;</p>",
+            "type": {
+              "id": "organization"
+            },
+            "website": "https://cfconventions.org"
+          },
+          "access": {
+            "visibility": "public",
+            "members_visibility": "public",
+            "member_policy": "open",
+            "record_submission_policy": "open",
+            "review_policy": "closed"
+          },
+          "custom_fields": {},
+          "deletion_status": {
+            "is_deleted": false,
+            "status": "P"
+          },
+          "children": {
+            "allow": false
+          }
+        }
+      ]
+    },
+    "pids": {
+      "doi": {
+        "identifier": "10.5281/zenodo.14274886",
+        "provider": "datacite",
+        "client": "datacite"
+      }
+    }
+  },
+  "versions": {
+    "is_latest": true,
+    "index": 12
+  },
+  "is_published": true,
+  "is_draft": false,
+  "pids": {
+    "doi": {
+      "identifier": "10.5281/zenodo.14275572",
+      "provider": "datacite",
+      "client": "datacite"
+    },
+    "oai": {
+      "identifier": "oai:zenodo.org:14275572",
+      "provider": "oai"
+    }
+  },
+  "metadata": {
+    "resource_type": {
+      "id": "publication-standard",
+      "title": {
+        "de": "Standard",
+        "en": "Standard"
+      }
+    },
+    "creators": [
+      {
+        "person_or_org": {
+          "type": "personal",
+          "name": "Eaton, Brian",
+          "given_name": "Brian",
+          "family_name": "Eaton"
+        },
+        "affiliations": [
+          {
+            "name": "NCAR"
+          }
+        ]
+      },
+      {
+        "person_or_org": {
+          "type": "personal",
+          "name": "Gregory, Jonathan",
+          "given_name": "Jonathan",
+          "family_name": "Gregory",
+          "identifiers": [
+            {
+              "identifier": "0000-0003-1296-8644",
+              "scheme": "orcid"
+            }
+          ]
+        },
+        "affiliations": [
+          {
+            "name": "University of Reading and UK Met Office Hadley Centre"
+          }
+        ]
+      },
+      {
+        "person_or_org": {
+          "type": "personal",
+          "name": "Drach, Bob",
+          "given_name": "Bob",
+          "family_name": "Drach"
+        },
+        "affiliations": [
+          {
+            "name": "PCMDI, LLNL"
+          }
+        ]
+      },
+      {
+        "person_or_org": {
+          "type": "personal",
+          "name": "Taylor, Karl",
+          "given_name": "Karl",
+          "family_name": "Taylor",
+          "identifiers": [
+            {
+              "identifier": "0000-0002-6491-2135",
+              "scheme": "orcid"
+            }
+          ]
+        },
+        "affiliations": [
+          {
+            "name": "PCMDI, LLNL"
+          }
+        ]
+      },
+      {
+        "person_or_org": {
+          "type": "personal",
+          "name": "Hankin, Steve",
+          "given_name": "Steve",
+          "family_name": "Hankin"
+        },
+        "affiliations": [
+          {
+            "name": "PMEL, NOAA"
+          }
+        ]
+      },
+      {
+        "person_or_org": {
+          "type": "personal",
+          "name": "Caron, John",
+          "given_name": "John",
+          "family_name": "Caron"
+        },
+        "affiliations": [
+          {
+            "name": "UCAR"
+          }
+        ]
+      },
+      {
+        "person_or_org": {
+          "type": "personal",
+          "name": "Signell, Rich",
+          "given_name": "Rich",
+          "family_name": "Signell"
+        },
+        "affiliations": [
+          {
+            "name": "USGS"
+          }
+        ]
+      },
+      {
+        "person_or_org": {
+          "type": "personal",
+          "name": "Bentley, Phil",
+          "given_name": "Phil",
+          "family_name": "Bentley"
+        },
+        "affiliations": [
+          {
+            "name": "Hadley Centre, UK Met Office"
+          }
+        ]
+      },
+      {
+        "person_or_org": {
+          "type": "personal",
+          "name": "Rappa, Greg",
+          "given_name": "Greg",
+          "family_name": "Rappa"
+        },
+        "affiliations": [
+          {
+            "name": "MIT"
+          }
+        ]
+      },
+      {
+        "person_or_org": {
+          "type": "personal",
+          "name": "Höck, Heinke",
+          "given_name": "Heinke",
+          "family_name": "Höck",
+          "identifiers": [
+            {
+              "identifier": "0000-0002-0131-1404",
+              "scheme": "orcid"
+            }
+          ]
+        },
+        "affiliations": [
+          {
+            "name": "DKRZ"
+          }
+        ]
+      },
+      {
+        "person_or_org": {
+          "type": "personal",
+          "name": "Pamment, Alison",
+          "given_name": "Alison",
+          "family_name": "Pamment",
+          "identifiers": [
+            {
+              "identifier": "0000-0001-5040-4626",
+              "scheme": "orcid"
+            }
+          ]
+        },
+        "affiliations": [
+          {
+            "name": "BADC"
+          }
+        ]
+      },
+      {
+        "person_or_org": {
+          "type": "personal",
+          "name": "Juckes, Martin",
+          "given_name": "Martin",
+          "family_name": "Juckes"
+        },
+        "affiliations": [
+          {
+            "name": "BADC"
+          }
+        ]
+      },
+      {
+        "person_or_org": {
+          "type": "personal",
+          "name": "Raspaud, Martin",
+          "given_name": "Martin",
+          "family_name": "Raspaud"
+        },
+        "affiliations": [
+          {
+            "name": "SMHI"
+          }
+        ]
+      },
+      {
+        "person_or_org": {
+          "type": "personal",
+          "name": "Blower, Jon",
+          "given_name": "Jon",
+          "family_name": "Blower"
+        },
+        "affiliations": [
+          {
+            "name": "University of Reading"
+          }
+        ]
+      },
+      {
+        "person_or_org": {
+          "type": "personal",
+          "name": "Horne, Randy",
+          "given_name": "Randy",
+          "family_name": "Horne"
+        },
+        "affiliations": [
+          {
+            "name": "Excalibur Laboratories Inc"
+          }
+        ]
+      },
+      {
+        "person_or_org": {
+          "type": "personal",
+          "name": "Whiteaker, Timothy",
+          "given_name": "Timothy",
+          "family_name": "Whiteaker"
+        },
+        "affiliations": [
+          {
+            "name": "University of Texas"
+          }
+        ]
+      },
+      {
+        "person_or_org": {
+          "type": "personal",
+          "name": "Blodgett, David",
+          "given_name": "David",
+          "family_name": "Blodgett"
+        },
+        "affiliations": [
+          {
+            "name": "USGS"
+          }
+        ]
+      },
+      {
+        "person_or_org": {
+          "type": "personal",
+          "name": "Zender, Charlie",
+          "given_name": "Charlie",
+          "family_name": "Zender"
+        },
+        "affiliations": [
+          {
+            "name": "University of California, Irvine"
+          }
+        ]
+      },
+      {
+        "person_or_org": {
+          "type": "personal",
+          "name": "Lee, Daniel",
+          "given_name": "Daniel",
+          "family_name": "Lee",
+          "identifiers": [
+            {
+              "identifier": "0000-0002-1041-232X",
+              "scheme": "orcid"
+            }
+          ]
+        },
+        "affiliations": [
+          {
+            "name": "EUMETSAT"
+          }
+        ]
+      },
+      {
+        "person_or_org": {
+          "type": "personal",
+          "name": "Hassell, David",
+          "given_name": "David",
+          "family_name": "Hassell",
+          "identifiers": [
+            {
+              "identifier": "0000-0001-5106-7502",
+              "scheme": "orcid"
+            }
+          ]
+        },
+        "affiliations": [
+          {
+            "name": "NCAS and University of Reading"
+          }
+        ]
+      },
+      {
+        "person_or_org": {
+          "type": "personal",
+          "name": "Snow, Alan D.",
+          "given_name": "Alan D.",
+          "family_name": "Snow"
+        },
+        "affiliations": [
+          {
+            "name": "Corteva Agriscience"
+          }
+        ]
+      },
+      {
+        "person_or_org": {
+          "type": "personal",
+          "name": "Kölling, Tobias",
+          "given_name": "Tobias",
+          "family_name": "Kölling"
+        },
+        "affiliations": [
+          {
+            "name": "Max Planck Institute for Meteorology"
+          }
+        ]
+      },
+      {
+        "person_or_org": {
+          "type": "personal",
+          "name": "Allured, Dave",
+          "given_name": "Dave",
+          "family_name": "Allured"
+        },
+        "affiliations": [
+          {
+            "name": "NOAA/CIRES/University of Colorado"
+          }
+        ]
+      },
+      {
+        "person_or_org": {
+          "type": "personal",
+          "name": "Jelenak, Aleksandar",
+          "given_name": "Aleksandar",
+          "family_name": "Jelenak"
+        },
+        "affiliations": [
+          {
+            "name": "HDF Group"
+          }
+        ]
+      },
+      {
+        "person_or_org": {
+          "type": "personal",
+          "name": "Soerensen, Anders Meier",
+          "given_name": "Anders Meier",
+          "family_name": "Soerensen"
+        },
+        "affiliations": [
+          {
+            "name": "EUMETSAT"
+          }
+        ]
+      },
+      {
+        "person_or_org": {
+          "type": "personal",
+          "name": "Gaultier, Lucile",
+          "given_name": "Lucile",
+          "family_name": "Gaultier"
+        },
+        "affiliations": [
+          {
+            "name": "OceanDataLab"
+          }
+        ]
+      },
+      {
+        "person_or_org": {
+          "type": "personal",
+          "name": "Herlédan, Sylvain",
+          "given_name": "Sylvain",
+          "family_name": "Herlédan"
+        },
+        "affiliations": [
+          {
+            "name": "OceanDataLab"
+          }
+        ]
+      },
+      {
+        "person_or_org": {
+          "type": "personal",
+          "name": "Manzano, Fernando",
+          "given_name": "Fernando",
+          "family_name": "Manzano"
+        },
+        "affiliations": [
+          {
+            "name": "Puertos del Estado, Madrid"
+          }
+        ]
+      },
+      {
+        "person_or_org": {
+          "type": "personal",
+          "name": "Bärring, Lars",
+          "given_name": "Lars",
+          "family_name": "Bärring",
+          "identifiers": [
+            {
+              "identifier": "0000-0001-7280-2502",
+              "scheme": "orcid"
+            }
+          ]
+        },
+        "affiliations": [
+          {
+            "name": "SMHI Rossby Centre, Swedish Meteorological and Hydrological Institute"
+          }
+        ]
+      },
+      {
+        "person_or_org": {
+          "type": "personal",
+          "name": "Barker, Christopher",
+          "given_name": "Christopher",
+          "family_name": "Barker"
+        },
+        "affiliations": [
+          {
+            "name": "NOAA"
+          }
+        ]
+      },
+      {
+        "person_or_org": {
+          "type": "personal",
+          "name": "Bartholomew, Sadie L.",
+          "given_name": "Sadie L.",
+          "family_name": "Bartholomew",
+          "identifiers": [
+            {
+              "identifier": "0000-0002-6180-3603",
+              "scheme": "orcid"
+            }
+          ]
+        },
+        "affiliations": [
+          {
+            "name": "National Centre for Atmospheric Science and University of Reading"
+          }
+        ]
+      }
+    ],
+    "title": "NetCDF Climate and Forecast (CF) Metadata Conventions",
+    "publisher": "CF Community",
+    "publication_date": "2023-12-05",
+    "related_identifiers": [
+      {
+        "identifier": "https://cfconventions.org/",
+        "scheme": "url",
+        "relation_type": {
+          "id": "isdocumentedby",
+          "title": {
+            "de": "Wird dokumentiert von",
+            "en": "Is documented by"
+          }
+        },
+        "resource_type": {
+          "id": "publication-standard",
+          "title": {
+            "de": "Standard",
+            "en": "Standard"
+          }
+        }
+      },
+      {
+        "identifier": "https://github.com/cf-convention/cf-conventions/tree/v1.11.0",
+        "scheme": "url",
+        "relation_type": {
+          "id": "isderivedfrom",
+          "title": {
+            "de": "Wird abgeleitet von",
+            "en": "Is derived from"
+          }
+        },
+        "resource_type": {
+          "id": "publication-standard",
+          "title": {
+            "de": "Standard",
+            "en": "Standard"
+          }
+        }
+      },
+      {
+        "identifier": "https://cfconventions.org/Data/cf-conventions/cf-conventions-1.11/cf-conventions.html",
+        "scheme": "url",
+        "relation_type": {
+          "id": "isidenticalto",
+          "title": {
+            "de": "Ist identisch mit",
+            "en": "Is identical to"
+          }
+        },
+        "resource_type": {
+          "id": "publication-standard",
+          "title": {
+            "de": "Standard",
+            "en": "Standard"
+          }
+        }
+      },
+      {
+        "identifier": "https://cfconventions.org/Data/cf-conventions/cf-conventions-1.11/cf-conventions.pdf",
+        "scheme": "url",
+        "relation_type": {
+          "id": "isidenticalto",
+          "title": {
+            "de": "Ist identisch mit",
+            "en": "Is identical to"
+          }
+        },
+        "resource_type": {
+          "id": "publication-standard",
+          "title": {
+            "de": "Standard",
+            "en": "Standard"
+          }
+        }
+      },
+      {
+        "identifier": "https://cfconventions.org/Data/cf-documents/requirements-recommendations/conformance-1.11.html",
+        "scheme": "url",
+        "relation_type": {
+          "id": "isidenticalto",
+          "title": {
+            "de": "Ist identisch mit",
+            "en": "Is identical to"
+          }
+        },
+        "resource_type": {
+          "id": "publication-standard",
+          "title": {
+            "de": "Standard",
+            "en": "Standard"
+          }
+        }
+      }
+    ],
+    "version": "1.11",
+    "rights": [
+      {
+        "id": "cc0-1.0",
+        "title": {
+          "en": "Creative Commons Zero v1.0 Universal"
+        },
+        "description": {
+          "en": "CC0 waives copyright interest in a work you've created and dedicates it to the world-wide public domain. Use CC0 to opt out of copyright entirely and ensure your work has the widest reach."
+        },
+        "icon": "cc-cc0-icon",
+        "props": {
+          "url": "https://creativecommons.org/publicdomain/zero/1.0/legalcode",
+          "scheme": "spdx"
+        }
+      }
+    ],
+    "description": "<p>This document describes the CF conventions for climate and forecast metadata designed to promote the processing and sharing of files created with the netCDF Application Programmer Interface. The conventions define metadata that provide a definitive description of what the data in each variable represents, and of the spatial and temporal properties of the data. This enables users of data from different sources to decide which quantities are comparable, and facilitates building applications with powerful extraction, regridding, and display capabilities.</p><p>The CF conventions generalize and extend the COARDS conventions. The extensions include metadata that provides a precise definition of each variable via specification of a standard name, describes the vertical locations corresponding to dimensionless vertical coordinate values, and provides the spatial coordinates of non-rectilinear gridded data. Since climate and forecast data are often not simply representative of points in space/time, other extensions provide for the description of coordinate intervals, multidimensional cells and climatological time coordinates, and indicate how a data value is representative of an interval or cell. This standard also relaxes the COARDS constraints on dimension order and specifies methods for reducing the size of datasets.</p>"
+  },
+  "custom_fields": {
+    "legacy:communities": [
+      "cfconventions-sandbox"
+    ]
+  },
+  "access": {
+    "record": "public",
+    "files": "public",
+    "embargo": {
+      "active": false,
+      "reason": null
+    },
+    "status": "open"
+  },
+  "files": {
+    "enabled": true,
+    "order": [],
+    "count": 2,
+    "total_bytes": 6326872,
+    "entries": {
+      "cf-conventions.pdf": {
+        "id": "0f460884-7a83-413d-85f4-6659ae0815b8",
+        "checksum": "md5:24f73fade28dea807df0a6f5131b0384",
+        "ext": "pdf",
+        "size": 5979284,
+        "mimetype": "application/pdf",
+        "storage_class": "L",
+        "key": "cf-conventions.pdf",
+        "metadata": {},
+        "access": {
+          "hidden": false
+        },
+        "links": {
+          "self": "https://zenodo.org/api/records/14275572/files/cf-conventions.pdf",
+          "content": "https://zenodo.org/api/records/14275572/files/cf-conventions.pdf/content",
+          "iiif_canvas": "https://zenodo.org/api/iiif/record:14275572/canvas/cf-conventions.pdf",
+          "iiif_base": "https://zenodo.org/api/iiif/record:14275572:cf-conventions.pdf",
+          "iiif_info": "https://zenodo.org/api/iiif/record:14275572:cf-conventions.pdf/info.json",
+          "iiif_api": "https://zenodo.org/api/iiif/record:14275572:cf-conventions.pdf/full/full/0/default.png"
+        }
+      },
+      "conformance.pdf": {
+        "id": "a503c0f4-00a5-4915-ace9-ad7ac826ccdb",
+        "checksum": "md5:85ec577392275291de07eb78aadddfae",
+        "ext": "pdf",
+        "size": 347588,
+        "mimetype": "application/pdf",
+        "storage_class": "L",
+        "key": "conformance.pdf",
+        "metadata": {},
+        "access": {
+          "hidden": false
+        },
+        "links": {
+          "self": "https://zenodo.org/api/records/14275572/files/conformance.pdf",
+          "content": "https://zenodo.org/api/records/14275572/files/conformance.pdf/content",
+          "iiif_canvas": "https://zenodo.org/api/iiif/record:14275572/canvas/conformance.pdf",
+          "iiif_base": "https://zenodo.org/api/iiif/record:14275572:conformance.pdf",
+          "iiif_info": "https://zenodo.org/api/iiif/record:14275572:conformance.pdf/info.json",
+          "iiif_api": "https://zenodo.org/api/iiif/record:14275572:conformance.pdf/full/full/0/default.png"
+        }
+      }
+    }
+  },
+  "media_files": {
+    "enabled": true,
+    "order": [],
+    "count": 2,
+    "total_bytes": 0,
+    "entries": {
+      "cf-conventions.pdf.ptif": {
+        "id": "44c36d93-da22-48d1-a4e3-01b21083d5bd",
+        "ext": "ptif",
+        "size": 0,
+        "mimetype": "application/octet-stream",
+        "storage_class": "L",
+        "key": "cf-conventions.pdf.ptif",
+        "metadata": null,
+        "access": {
+          "hidden": true
+        },
+        "processor": {
+          "type": "image-tiles",
+          "status": "finished",
+          "source_file_id": "0f460884-7a83-413d-85f4-6659ae0815b8"
+        },
+        "links": {
+          "self": "https://zenodo.org/api/records/14275572/files/cf-conventions.pdf.ptif",
+          "content": "https://zenodo.org/api/records/14275572/files/cf-conventions.pdf.ptif/content"
+        }
+      },
+      "conformance.pdf.ptif": {
+        "id": "5b1d30bb-6d12-4500-809e-8801237744fc",
+        "ext": "ptif",
+        "size": 0,
+        "mimetype": "application/octet-stream",
+        "storage_class": "L",
+        "key": "conformance.pdf.ptif",
+        "metadata": null,
+        "access": {
+          "hidden": true
+        },
+        "processor": {
+          "type": "image-tiles",
+          "status": "finished",
+          "source_file_id": "a503c0f4-00a5-4915-ace9-ad7ac826ccdb"
+        },
+        "links": {
+          "self": "https://zenodo.org/api/records/14275572/files/conformance.pdf.ptif",
+          "content": "https://zenodo.org/api/records/14275572/files/conformance.pdf.ptif/content"
+        }
+      }
+    }
+  },
+  "status": "published",
+  "deletion_status": {
+    "is_deleted": false,
+    "status": "P"
+  },
+  "stats": {
+    "this_version": {
+      "views": 31,
+      "unique_views": 18,
+      "downloads": 46,
+      "unique_downloads": 23,
+      "data_volume": 241256888.0
+    },
+    "all_versions": {
+      "views": 52,
+      "unique_views": 37,
+      "downloads": 160,
+      "unique_downloads": 75,
+      "data_volume": 415400041.0
+    }
+  },
+  "swh": {},
+  "ui": {
+    "publication_date_l10n_medium": "Dec 5, 2023",
+    "publication_date_l10n_long": "December 5, 2023",
+    "created_date_l10n_long": "December 4, 2024",
+    "updated_date_l10n_long": "December 4, 2024",
+    "resource_type": {
+      "id": "publication-standard",
+      "title_l10n": "Standard"
+    },
+    "custom_fields": {
+      "legacy:communities": [
+        "cfconventions-sandbox"
+      ]
+    },
+    "access_status": {
+      "id": "open",
+      "title_l10n": "Open",
+      "description_l10n": "The record and files are publicly accessible.",
+      "icon": "unlock",
+      "embargo_date_l10n": null,
+      "message_class": ""
+    },
+    "creators": {
+      "creators": [
+        {
+          "person_or_org": {
+            "type": "personal",
+            "name": "Eaton, Brian",
+            "given_name": "Brian",
+            "family_name": "Eaton"
+          },
+          "affiliations": [
+            [
+              1,
+              "NCAR"
+            ]
+          ]
+        },
+        {
+          "person_or_org": {
+            "type": "personal",
+            "name": "Gregory, Jonathan",
+            "given_name": "Jonathan",
+            "family_name": "Gregory",
+            "identifiers": [
+              {
+                "identifier": "0000-0003-1296-8644",
+                "scheme": "orcid"
+              }
+            ]
+          },
+          "affiliations": [
+            [
+              2,
+              "University of Reading and UK Met Office Hadley Centre"
+            ]
+          ]
+        },
+        {
+          "person_or_org": {
+            "type": "personal",
+            "name": "Drach, Bob",
+            "given_name": "Bob",
+            "family_name": "Drach"
+          },
+          "affiliations": [
+            [
+              3,
+              "PCMDI, LLNL"
+            ]
+          ]
+        },
+        {
+          "person_or_org": {
+            "type": "personal",
+            "name": "Taylor, Karl",
+            "given_name": "Karl",
+            "family_name": "Taylor",
+            "identifiers": [
+              {
+                "identifier": "0000-0002-6491-2135",
+                "scheme": "orcid"
+              }
+            ]
+          },
+          "affiliations": [
+            [
+              3,
+              "PCMDI, LLNL"
+            ]
+          ]
+        },
+        {
+          "person_or_org": {
+            "type": "personal",
+            "name": "Hankin, Steve",
+            "given_name": "Steve",
+            "family_name": "Hankin"
+          },
+          "affiliations": [
+            [
+              4,
+              "PMEL, NOAA"
+            ]
+          ]
+        },
+        {
+          "person_or_org": {
+            "type": "personal",
+            "name": "Caron, John",
+            "given_name": "John",
+            "family_name": "Caron"
+          },
+          "affiliations": [
+            [
+              5,
+              "UCAR"
+            ]
+          ]
+        },
+        {
+          "person_or_org": {
+            "type": "personal",
+            "name": "Signell, Rich",
+            "given_name": "Rich",
+            "family_name": "Signell"
+          },
+          "affiliations": [
+            [
+              6,
+              "USGS"
+            ]
+          ]
+        },
+        {
+          "person_or_org": {
+            "type": "personal",
+            "name": "Bentley, Phil",
+            "given_name": "Phil",
+            "family_name": "Bentley"
+          },
+          "affiliations": [
+            [
+              7,
+              "Hadley Centre, UK Met Office"
+            ]
+          ]
+        },
+        {
+          "person_or_org": {
+            "type": "personal",
+            "name": "Rappa, Greg",
+            "given_name": "Greg",
+            "family_name": "Rappa"
+          },
+          "affiliations": [
+            [
+              8,
+              "MIT"
+            ]
+          ]
+        },
+        {
+          "person_or_org": {
+            "type": "personal",
+            "name": "Höck, Heinke",
+            "given_name": "Heinke",
+            "family_name": "Höck",
+            "identifiers": [
+              {
+                "identifier": "0000-0002-0131-1404",
+                "scheme": "orcid"
+              }
+            ]
+          },
+          "affiliations": [
+            [
+              9,
+              "DKRZ"
+            ]
+          ]
+        },
+        {
+          "person_or_org": {
+            "type": "personal",
+            "name": "Pamment, Alison",
+            "given_name": "Alison",
+            "family_name": "Pamment",
+            "identifiers": [
+              {
+                "identifier": "0000-0001-5040-4626",
+                "scheme": "orcid"
+              }
+            ]
+          },
+          "affiliations": [
+            [
+              10,
+              "BADC"
+            ]
+          ]
+        },
+        {
+          "person_or_org": {
+            "type": "personal",
+            "name": "Juckes, Martin",
+            "given_name": "Martin",
+            "family_name": "Juckes"
+          },
+          "affiliations": [
+            [
+              10,
+              "BADC"
+            ]
+          ]
+        },
+        {
+          "person_or_org": {
+            "type": "personal",
+            "name": "Raspaud, Martin",
+            "given_name": "Martin",
+            "family_name": "Raspaud"
+          },
+          "affiliations": [
+            [
+              11,
+              "SMHI"
+            ]
+          ]
+        },
+        {
+          "person_or_org": {
+            "type": "personal",
+            "name": "Blower, Jon",
+            "given_name": "Jon",
+            "family_name": "Blower"
+          },
+          "affiliations": [
+            [
+              12,
+              "University of Reading"
+            ]
+          ]
+        },
+        {
+          "person_or_org": {
+            "type": "personal",
+            "name": "Horne, Randy",
+            "given_name": "Randy",
+            "family_name": "Horne"
+          },
+          "affiliations": [
+            [
+              13,
+              "Excalibur Laboratories Inc"
+            ]
+          ]
+        },
+        {
+          "person_or_org": {
+            "type": "personal",
+            "name": "Whiteaker, Timothy",
+            "given_name": "Timothy",
+            "family_name": "Whiteaker"
+          },
+          "affiliations": [
+            [
+              14,
+              "University of Texas"
+            ]
+          ]
+        },
+        {
+          "person_or_org": {
+            "type": "personal",
+            "name": "Blodgett, David",
+            "given_name": "David",
+            "family_name": "Blodgett"
+          },
+          "affiliations": [
+            [
+              6,
+              "USGS"
+            ]
+          ]
+        },
+        {
+          "person_or_org": {
+            "type": "personal",
+            "name": "Zender, Charlie",
+            "given_name": "Charlie",
+            "family_name": "Zender"
+          },
+          "affiliations": [
+            [
+              15,
+              "University of California, Irvine"
+            ]
+          ]
+        },
+        {
+          "person_or_org": {
+            "type": "personal",
+            "name": "Lee, Daniel",
+            "given_name": "Daniel",
+            "family_name": "Lee",
+            "identifiers": [
+              {
+                "identifier": "0000-0002-1041-232X",
+                "scheme": "orcid"
+              }
+            ]
+          },
+          "affiliations": [
+            [
+              16,
+              "EUMETSAT"
+            ]
+          ]
+        },
+        {
+          "person_or_org": {
+            "type": "personal",
+            "name": "Hassell, David",
+            "given_name": "David",
+            "family_name": "Hassell",
+            "identifiers": [
+              {
+                "identifier": "0000-0001-5106-7502",
+                "scheme": "orcid"
+              }
+            ]
+          },
+          "affiliations": [
+            [
+              17,
+              "NCAS and University of Reading"
+            ]
+          ]
+        },
+        {
+          "person_or_org": {
+            "type": "personal",
+            "name": "Snow, Alan D.",
+            "given_name": "Alan D.",
+            "family_name": "Snow"
+          },
+          "affiliations": [
+            [
+              18,
+              "Corteva Agriscience"
+            ]
+          ]
+        },
+        {
+          "person_or_org": {
+            "type": "personal",
+            "name": "Kölling, Tobias",
+            "given_name": "Tobias",
+            "family_name": "Kölling"
+          },
+          "affiliations": [
+            [
+              19,
+              "Max Planck Institute for Meteorology"
+            ]
+          ]
+        },
+        {
+          "person_or_org": {
+            "type": "personal",
+            "name": "Allured, Dave",
+            "given_name": "Dave",
+            "family_name": "Allured"
+          },
+          "affiliations": [
+            [
+              20,
+              "NOAA/CIRES/University of Colorado"
+            ]
+          ]
+        },
+        {
+          "person_or_org": {
+            "type": "personal",
+            "name": "Jelenak, Aleksandar",
+            "given_name": "Aleksandar",
+            "family_name": "Jelenak"
+          },
+          "affiliations": [
+            [
+              21,
+              "HDF Group"
+            ]
+          ]
+        },
+        {
+          "person_or_org": {
+            "type": "personal",
+            "name": "Soerensen, Anders Meier",
+            "given_name": "Anders Meier",
+            "family_name": "Soerensen"
+          },
+          "affiliations": [
+            [
+              16,
+              "EUMETSAT"
+            ]
+          ]
+        },
+        {
+          "person_or_org": {
+            "type": "personal",
+            "name": "Gaultier, Lucile",
+            "given_name": "Lucile",
+            "family_name": "Gaultier"
+          },
+          "affiliations": [
+            [
+              22,
+              "OceanDataLab"
+            ]
+          ]
+        },
+        {
+          "person_or_org": {
+            "type": "personal",
+            "name": "Herlédan, Sylvain",
+            "given_name": "Sylvain",
+            "family_name": "Herlédan"
+          },
+          "affiliations": [
+            [
+              22,
+              "OceanDataLab"
+            ]
+          ]
+        },
+        {
+          "person_or_org": {
+            "type": "personal",
+            "name": "Manzano, Fernando",
+            "given_name": "Fernando",
+            "family_name": "Manzano"
+          },
+          "affiliations": [
+            [
+              23,
+              "Puertos del Estado, Madrid"
+            ]
+          ]
+        },
+        {
+          "person_or_org": {
+            "type": "personal",
+            "name": "Bärring, Lars",
+            "given_name": "Lars",
+            "family_name": "Bärring",
+            "identifiers": [
+              {
+                "identifier": "0000-0001-7280-2502",
+                "scheme": "orcid"
+              }
+            ]
+          },
+          "affiliations": [
+            [
+              24,
+              "SMHI Rossby Centre, Swedish Meteorological and Hydrological Institute"
+            ]
+          ]
+        },
+        {
+          "person_or_org": {
+            "type": "personal",
+            "name": "Barker, Christopher",
+            "given_name": "Christopher",
+            "family_name": "Barker"
+          },
+          "affiliations": [
+            [
+              25,
+              "NOAA"
+            ]
+          ]
+        },
+        {
+          "person_or_org": {
+            "type": "personal",
+            "name": "Bartholomew, Sadie L.",
+            "given_name": "Sadie L.",
+            "family_name": "Bartholomew",
+            "identifiers": [
+              {
+                "identifier": "0000-0002-6180-3603",
+                "scheme": "orcid"
+              }
+            ]
+          },
+          "affiliations": [
+            [
+              26,
+              "National Centre for Atmospheric Science and University of Reading"
+            ]
+          ]
+        }
+      ],
+      "affiliations": [
+        [
+          1,
+          "NCAR",
+          null
+        ],
+        [
+          2,
+          "University of Reading and UK Met Office Hadley Centre",
+          null
+        ],
+        [
+          3,
+          "PCMDI, LLNL",
+          null
+        ],
+        [
+          4,
+          "PMEL, NOAA",
+          null
+        ],
+        [
+          5,
+          "UCAR",
+          null
+        ],
+        [
+          6,
+          "USGS",
+          null
+        ],
+        [
+          7,
+          "Hadley Centre, UK Met Office",
+          null
+        ],
+        [
+          8,
+          "MIT",
+          null
+        ],
+        [
+          9,
+          "DKRZ",
+          null
+        ],
+        [
+          10,
+          "BADC",
+          null
+        ],
+        [
+          11,
+          "SMHI",
+          null
+        ],
+        [
+          12,
+          "University of Reading",
+          null
+        ],
+        [
+          13,
+          "Excalibur Laboratories Inc",
+          null
+        ],
+        [
+          14,
+          "University of Texas",
+          null
+        ],
+        [
+          15,
+          "University of California, Irvine",
+          null
+        ],
+        [
+          16,
+          "EUMETSAT",
+          null
+        ],
+        [
+          17,
+          "NCAS and University of Reading",
+          null
+        ],
+        [
+          18,
+          "Corteva Agriscience",
+          null
+        ],
+        [
+          19,
+          "Max Planck Institute for Meteorology",
+          null
+        ],
+        [
+          20,
+          "NOAA/CIRES/University of Colorado",
+          null
+        ],
+        [
+          21,
+          "HDF Group",
+          null
+        ],
+        [
+          22,
+          "OceanDataLab",
+          null
+        ],
+        [
+          23,
+          "Puertos del Estado, Madrid",
+          null
+        ],
+        [
+          24,
+          "SMHI Rossby Centre, Swedish Meteorological and Hydrological Institute",
+          null
+        ],
+        [
+          25,
+          "NOAA",
+          null
+        ],
+        [
+          26,
+          "National Centre for Atmospheric Science and University of Reading",
+          null
+        ]
+      ]
+    },
+    "description_stripped": "This document describes the CF conventions for climate and forecast metadata designed to promote the processing and sharing of files created with the netCDF Application Programmer Interface. The conventions define metadata that provide a definitive description of what the data in each variable represents, and of the spatial and temporal properties of the data. This enables users of data from different sources to decide which quantities are comparable, and facilitates building applications with powerful extraction, regridding, and display capabilities.\nThe CF conventions generalize and extend the COARDS conventions. The extensions include metadata that provides a precise definition of each variable via specification of a standard name, describes the vertical locations corresponding to dimensionless vertical coordinate values, and provides the spatial coordinates of non-rectilinear gridded data. Since climate and forecast data are often not simply representative of points in space/time, other extensions provide for the description of coordinate intervals, multidimensional cells and climatological time coordinates, and indicate how a data value is representative of an interval or cell. This standard also relaxes the COARDS constraints on dimension order and specifies methods for reducing the size of datasets.",
+    "version": "1.11",
+    "related_identifiers": [
+      {
+        "identifier": "https://cfconventions.org/",
+        "relation_type": {
+          "id": "isdocumentedby",
+          "title_l10n": "Is documented by"
+        },
+        "scheme": "url",
+        "resource_type": {
+          "id": "publication-standard",
+          "title_l10n": "Standard"
+        }
+      },
+      {
+        "identifier": "https://github.com/cf-convention/cf-conventions/tree/v1.11.0",
+        "relation_type": {
+          "id": "isderivedfrom",
+          "title_l10n": "Is derived from"
+        },
+        "scheme": "url",
+        "resource_type": {
+          "id": "publication-standard",
+          "title_l10n": "Standard"
+        }
+      },
+      {
+        "identifier": "https://cfconventions.org/Data/cf-conventions/cf-conventions-1.11/cf-conventions.html",
+        "relation_type": {
+          "id": "isidenticalto",
+          "title_l10n": "Is identical to"
+        },
+        "scheme": "url",
+        "resource_type": {
+          "id": "publication-standard",
+          "title_l10n": "Standard"
+        }
+      },
+      {
+        "identifier": "https://cfconventions.org/Data/cf-conventions/cf-conventions-1.11/cf-conventions.pdf",
+        "relation_type": {
+          "id": "isidenticalto",
+          "title_l10n": "Is identical to"
+        },
+        "scheme": "url",
+        "resource_type": {
+          "id": "publication-standard",
+          "title_l10n": "Standard"
+        }
+      },
+      {
+        "identifier": "https://cfconventions.org/Data/cf-documents/requirements-recommendations/conformance-1.11.html",
+        "relation_type": {
+          "id": "isidenticalto",
+          "title_l10n": "Is identical to"
+        },
+        "scheme": "url",
+        "resource_type": {
+          "id": "publication-standard",
+          "title_l10n": "Standard"
+        }
+      }
+    ],
+    "rights": [
+      {
+        "id": "cc0-1.0",
+        "title_l10n": "Creative Commons Zero v1.0 Universal",
+        "description_l10n": "CC0 waives copyright interest in a work you've created and dedicates it to the world-wide public domain. Use CC0 to opt out of copyright entirely and ensure your work has the widest reach.",
+        "icon": "cc-cc0-icon",
+        "props": {
+          "url": "https://creativecommons.org/publicdomain/zero/1.0/legalcode",
+          "scheme": "spdx"
+        }
+      }
+    ],
+    "is_draft": false
+  }
+}
