@@ -1,0 +1,40 @@
+NOTICE
+------
+
+### **Copyright and License**
+All original, human-created content in this repository is **exclusively authored, developed, and maintained** by **Antonio S. Cofiño**, unless explicitly stated otherwise. 
+
+This project is distributed under the **Mozilla Public License Version 2.0 (MPL-2.0)**. For more details, see the **LICENSE** file included in this repository.
+
+### **Attribution and Citation Policy**
+If you use this software in your research or project, you are **required to cite it**.  
+A citation file (**CITATION.cff**) is provided in this repository with the recommended citation format.  
+Proper citation ensures the author receives appropriate credit for their work.
+
+### **Third-Party Software Attributions**
+This project includes third-party software that is distributed under separate license terms.  
+Below is a list of the third-party components used in this repository:
+
+1. **Docopt**
+   - **Purpose**: Provides command-line argument parsing for `scripts/zenodo.py`.
+   - **Source**: [https://github.com/docopt/docopt](https://github.com/docopt/docopt)
+   - **License**: MIT License
+   - **File**: `utils/docopt.py`
+
+The source code for **Docopt** is included in this repository under the file `utils/docopt.py`.  
+For details on the license and usage rights for Docopt, please refer to the **MIT License** file provided  
+at [https://opensource.org/licenses/MIT](https://opensource.org/licenses/MIT).
+
+### **Acknowledgment of Contributions**
+This repository is **authored, developed, and maintained** by **Antonio S. Cofiño**, who serves as the **primary developer and principal contributor** for this project.
+
+While some portions of the source code were guided by insights from **Code Copilot**, an AI-based assistant powered by OpenAI's ChatGPT, **all final decisions, implementations, and customizations were made by Antonio S. Cofiño**. No copyright or intellectual property claims are made for guidance or suggestions provided by Code Copilot.
+
+### **Disclaimer**
+This project is a **personal project** developed and maintained solely by **Antonio S. Cofiño**.  
+It is **not affiliated with, endorsed by, or officially connected to** any institution, including but not limited to **IFCA**, **CSIC**, or **UC**.  
+Any references to these institutions are purely for context and **do not imply any responsibility, support, or endorsement** of this project.
+
+**THIS SOFTWARE IS PROVIDED "AS IS"**, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NONINFRINGEMENT.  
+
+**Antonio S. Cofiño DISCLAIMS ANY AND ALL LIABILITY** for any damages, losses, or claims arising from the use of this software. Users of this software assume full responsibility for its use and any consequences that may arise.

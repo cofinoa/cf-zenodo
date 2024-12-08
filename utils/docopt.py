@@ -1,11 +1,25 @@
-"""Pythonic command-line interface parser that will make you smile.
+# This file originates from the external "docopt" library.
+# It is included here for convenience and compatibility purposes.
+#
+# No modifications have been made to this file except for integration.
+# For any issues regarding this file, please refer to the original source at:
+# https://github.com/docopt/docopt
+#
+# Copyright (c) 2013 Vladimir Keleshev, vladimir@keleshev.com
+# Licensed under the MIT License. See LICENSE-MIT for details.
+#
+# Copyright (c) 2024 Antonio S. Cofiño
+# Licensed under the Mozilla Public License, v. 2.0. See LICENSE file for details.
+
+"""
+Pythonic command-line interface parser that will make you smile.
 
  * http://docopt.org
  * Repository and issue-tracker: https://github.com/docopt/docopt
  * Licensed under terms of MIT license (see LICENSE-MIT)
  * Copyright (c) 2013 Vladimir Keleshev, vladimir@keleshev.com
-
 """
+
 import sys
 import re
 

@@ -1,0 +1,36 @@
+cff-version: 1.2.0
+message: >
+  If you use this software to manage, publish, or interact with CF Convention records on Zenodo, 
+  please cite it using the following metadata.
+authors:
+  - family-names: Cofiño
+    given-names: Antonio S.
+    orcid: https://orcid.org/0000-0001-7719-979X
+title: "CF-Zenodo: A Toolkit for Managing CF Conventions Records on Zenodo"
+version: 0.0.1
+date-released: 2024-12-08
+url: https://github.com/cofinoa/cf-zenodo
+repository-code: https://github.com/cofinoa/cf-zenodo
+abstract: >
+  CF-Zenodo is a software tool to support the CF Conventions community by providing an end-to-end 
+  solution for the management, curation, and publication of CF Convention-related records on Zenodo. 
+  It facilitates the local caching, metadata manipulation, review process, and controlled publishing 
+  of historical and community-driven records. By streamlining interactions with Zenodo's InvenioRDM 
+  API, CF-Zenodo helps the CF community ensure the integrity, discoverability, and longevity of its 
+  records on Zenodo. 
+keywords:
+  - Zenodo
+  - InvenioRDM
+  - CF Conventions
+  - Metadata Management
+  - Open Science
+  - Open Data
+  - Digital Preservation
+license: Mozilla Public License 2.0
+type: software
+languages:
+  - Python
+contact:
+  - family-names: Cofiño
+    given-names: Antonio S.
+    email: cofinoa@gmail.com

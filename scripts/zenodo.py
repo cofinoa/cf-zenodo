@@ -1,4 +1,8 @@
 #!/usr/bin/env python3
+
+# Copyright (c) 2024 Antonio S. Cofiño
+# Licensed under the Mozilla Public License, v. 2.0. See LICENSE file for details.
+
 """
 Zenodo CLI
 
