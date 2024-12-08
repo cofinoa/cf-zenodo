@@ -6,6 +6,7 @@ channels:
 dependencies:
   # Core dependencies from conda
   - python=3.10  # Using Python 3.10 for compatibility with most libraries
+  - pip
   - requests
   - click
   - pydantic
