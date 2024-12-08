@@ -7,7 +7,7 @@ authors:
     given-names: Antonio S.
     orcid: https://orcid.org/0000-0001-7719-979X
 title: "CF-Zenodo: A Toolkit for Managing CF Conventions Records on Zenodo"
-version: 0.0.1
+version: 0.1.0
 date-released: 2024-12-08
 url: https://github.com/cofinoa/cf-zenodo
 repository-code: https://github.com/cofinoa/cf-zenodo

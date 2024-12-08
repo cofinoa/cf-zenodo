@@ -1,3 +1,4 @@
 [submodule "utils/inveniordm-py"]
-	path = utils/inveniordm-py
-	url = https://github.com/cofinoa/inveniordm-py.git
+  path = utils/inveniordm-py
+  url = https://github.com/cofinoa/inveniordm-py.git
+  branch = main
