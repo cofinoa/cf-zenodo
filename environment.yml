@@ -1,0 +1,15 @@
+name: cf-zenodo
+
+channels:
+  - conda-forge
+
+dependencies:
+  # Core dependencies from conda
+  - python=3.10  # Using Python 3.10 for compatibility with most libraries
+  - requests
+  - click
+  - pydantic
+  
+  # Pip dependencies not available on conda-forge, so we install it via pip
+  - pip:
+    - inveniordm-py  # Python client for the InvenioRDM REST API
