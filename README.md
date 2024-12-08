@@ -11,7 +11,7 @@ CF-Zenodo is a Python-based command-line interface (CLI) and script-based tool f
 
 ## 📁 **Repository Structure**
 ```
-cf-zenodo/
+/
 ├── config/
 │   ├── zenodo_config.json       # Main Zenodo configuration (API URL, community, etc.)
 │   ├── default_settings.json    # Default settings for fetching and CLI
@@ -37,35 +37,36 @@ cf-zenodo/
 ## 🚀 **Installation**
 
 1. **Clone the repository**:
-```bash
-git clone https://github.com/cofinoa/CF-Zenodo.git
-cd CF-Zenodo
-```
+    ```bash
+    git clone https://github.com/cofinoa/CF-Zenodo.git
+    cd CF-Zenodo
+    ```
 
 2. **Set up the environment**:
-```bash
-conda env create -f environment.yml
-conda activate cf-zenodo
-```
+    ```bash
+    conda env create -f environment.yml
+    conda activate cf-zenodo
+    ```
 
 3. **Set up environment variables** (optional):
 
-Create a `.env` file at the root of the repository with the following content:
-```
-ZENODO_BASE_URL=https://zenodo.org/api
-ZENODO_ACCESS_TOKEN=your_access_token_here
-ZENODO_COMMUNITY_ID=cfconventions
-```
+    Create a `.env` file at the root of the repository with the following content:
+    ```
+    ZENODO_BASE_URL=https://zenodo.org/api
+    ZENODO_ACCESS_TOKEN=your_access_token_here
+    ZENODO_COMMUNITY_ID=cfconventions
+    ```
 
-Alternatively, you can export these variables in your terminal:
-```bash
-export ZENODO_BASE_URL=https://zenodo.org/api
-export ZENODO_ACCESS_TOKEN=your_access_token_here
-export ZENODO_COMMUNITY_ID=cfconventions
-```
+    Alternatively, you can export these variables in your terminal:
+    ```bash
+    export ZENODO_BASE_URL=https://zenodo.org/api
+    export ZENODO_ACCESS_TOKEN=your_access_token_here
+    export ZENODO_COMMUNITY_ID=cfconventions
+    ```
 
 ---
 ## ⚙️ **Configuration**
+
 The CF-Zenodo repository supports multiple configuration methods:
 1. **`.env` file**: Defines environment variables (e.g., `ZENODO_ACCESS_TOKEN`).
 2. **Config files**:
