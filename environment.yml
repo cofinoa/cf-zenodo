@@ -8,9 +8,8 @@ dependencies:
   - python=3.10  # Using Python 3.10 for compatibility with most libraries
   - pip
   - requests
-  - click
-  - pydantic
   
   # Pip dependencies not available on conda-forge, so we install it via pip
   - pip:
-    - inveniordm-py  # Python client for the InvenioRDM REST API
+    #- inveniordm-py  # Python client for the InvenioRDM REST API
+    - -e ./utils/inveniordm-py  # Editable mode from local path

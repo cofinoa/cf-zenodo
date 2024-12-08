@@ -27,6 +27,7 @@ def load_env_file(env_file=".env"):
                 os.environ[key] = value
                 logger.info(f"Set environment variable: {key}")
 
+
 def load_config_with_env(file_path, env_overrides=None):
     """Load a configuration file and override values with environment variables."""
     if not os.path.exists(file_path):
@@ -45,6 +46,7 @@ def load_config_with_env(file_path, env_overrides=None):
 
     return config
 
+
 def load_zenodo_config(config_path="config/zenodo_config.json"):
     """Load and return the Zenodo configuration with optional environment overrides."""
     env_overrides = {
@@ -54,9 +56,11 @@ def load_zenodo_config(config_path="config/zenodo_config.json"):
     }
     return load_config_with_env(config_path, env_overrides)
 
+
 def load_fetch_settings(fetch_path="config/default_settings.json"):
     """Load and return the fetch settings."""
     return load_config_with_env(fetch_path).get("fetch_metadata", {})
+
 
 def validate_and_warn_config(config, required_keys):
     """Validate configuration and log warnings for optional values."""
@@ -70,6 +74,7 @@ def validate_and_warn_config(config, required_keys):
 
     logger.info("Configuration validated successfully")
 
+
 def dump_config(config, label="Configuration", sensitive_keys=None):
     """Pretty-print the final configuration with sensitive keys masked."""
     if sensitive_keys is None:
@@ -77,6 +82,7 @@ def dump_config(config, label="Configuration", sensitive_keys=None):
 
     config = mask_sensitive_data(config, sensitive_keys)
     logger.info(f"{label}:\n{json.dumps(config, indent=2)}")
+
 
 def mask_sensitive_data(config, sensitive_keys=SENSITIVE_FIELDS):
     """Mask sensitive values in the configuration."""
@@ -86,19 +92,21 @@ def mask_sensitive_data(config, sensitive_keys=SENSITIVE_FIELDS):
             masked_config[key] = "************"
     return masked_config
 
+
 def load_metadata_template(template_path):
-  """Load the metadata template from the template path."""
-  if not os.path.exists(template_path):
-    logger.error(f"Metadata template file not found: {template_path}")
-    raise FileNotFoundError(f"Metadata template file not found: {template_path}")
+    """Load the metadata template from the template path."""
+    if not os.path.exists(template_path):
+        logger.error(f"Metadata template file not found: {template_path}")
+        raise FileNotFoundError(f"Metadata template file not found: {template_path}")
 
-  with open(template_path, "r") as f:
-    template = json.load(f)
-    logger.info(f"Loaded metadata template from {template_path}")
-  return template
+    with open(template_path, "r") as f:
+        template = json.load(f)
+        logger.info(f"Loaded metadata template from {template_path}")
+    return template
 
-def initialize_environment(config_path="config/zenodo_config.json", fetch_path="config/default_settings.json"):
-    """Simplified function to initialize environment, load configurations, and validate."""
+
+def initialize_workspace(config_path="config/zenodo_config.json", fetch_path="config/default_settings.json"):
+    """Initialize the workspace, load environment variables, load configurations, and validate."""
     # Load environment variables
     load_env_file()
 
@@ -109,7 +117,7 @@ def initialize_environment(config_path="config/zenodo_config.json", fetch_path="
     # Validate configuration
     validate_and_warn_config(zenodo_config, required_keys=["base_url", "community_id"])
 
-    # Create logs directory if it does not exist
+    # Create log directory if it does not exist
     log_file_path = fetch_settings.get("log_file", "./logs/fetch_records.log")
     log_dir = os.path.dirname(log_file_path)
     if log_dir:
@@ -125,6 +133,8 @@ def initialize_environment(config_path="config/zenodo_config.json", fetch_path="
             logging.StreamHandler()
         ]
     )
+
+    # Load metadata template
     template_path = fetch_settings.get("template_path", "config/metadata_template.json")
     metadata_template = load_metadata_template(template_path)
 

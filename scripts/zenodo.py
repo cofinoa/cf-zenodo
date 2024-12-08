@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 """
 Zenodo CLI
 
@@ -17,15 +18,23 @@ Options:
 import sys
 import os
 import logging
+
+# Dynamically add the project root directory to the Python path
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
 from utils.docopt import docopt
-from utils.config_utils import initialize_environment
+from utils.config_utils import initialize_workspace
 from utils.zenodo_api import ZenodoAPI
 
 # Initialize environment and configurations
-zenodo_config, fetch_settings, metadata_template = initialize_environment()
+zenodo_config, fetch_settings, metadata_template = initialize_workspace()
 
 # Initialize logging
 logger = logging.getLogger("zenodo_cli")
+logging.basicConfig(
+  level=logging.INFO, 
+  format="%(asctime)s - %(levelname)s - %(message)s"
+)
 
 
 def main():
@@ -39,7 +48,14 @@ def main():
   dry_run = args["--dry-run"]
 
   # Instantiate Zenodo API client
-  api_client = ZenodoAPI()
+  try:
+    api_client = ZenodoAPI(
+      base_url=zenodo_config.get("base_url"),
+      access_token=zenodo_config.get("access_token")
+    )
+  except Exception as e:
+    logger.error(f"Failed to initialize ZenodoAPI: {e}", exc_info=True)
+    sys.exit(1)
 
   try:
     if args["fetch"]:
@@ -48,23 +64,43 @@ def main():
         sys.exit(1)
 
       logger.info(f"Fetching records from Zenodo community: {community_id}")
-      api_client.fetch_records(community_id=community_id, output_dir=output_dir, dry_run=dry_run)
+      records = api_client.fetch_records(community_id=community_id, page=1, size=zenodo_config.get("max_records_per_page", 1000))
+      
+      if not records:
+        logger.info(f"No records found for community {community_id}.")
+      else:
+        logger.info(f"Fetched {len(records)} records from community {community_id}.")
 
     elif args["update"]:
       if not record_id:
         logger.error("Please specify a record ID with --record-id=<id>")
         sys.exit(1)
 
+      record_path = os.path.join(output_dir, "records", str(record_id), "metadata.json")
+      if not os.path.exists(record_path):
+        logger.error(f"No metadata file found at {record_path}")
+        sys.exit(1)
+
+      with open(record_path, "r") as f:
+        metadata = json.load(f)
+
       logger.info(f"Updating record with ID: {record_id}")
-      api_client.update_record(record_id=record_id, output_dir=output_dir)
+      response = api_client.update_record(record_id=record_id, metadata=metadata)
+      if response:
+        logger.info(f"Successfully updated record {record_id}")
 
     elif args["publish"]:
       if not record_id:
         logger.error("Please specify a record ID with --record-id=<id>")
         sys.exit(1)
 
-      logger.info(f"Publishing record with ID: {record_id}")
-      api_client.publish_record(record_id=record_id, dry_run=dry_run)
+      if dry_run:
+        logger.info(f"[DRY RUN] Would have published record with ID: {record_id}")
+      else:
+        logger.info(f"Publishing record with ID: {record_id}")
+        response = api_client.publish_record(record_id=record_id)
+        if response:
+          logger.info(f"Successfully published record {record_id}")
 
     elif args["show"]:
       if not record_id:
@@ -72,7 +108,11 @@ def main():
         sys.exit(1)
 
       logger.info(f"Showing metadata for record with ID: {record_id}")
-      api_client.show_record(record_id=record_id, output_dir=output_dir)
+      response = api_client.fetch_record(record_id=record_id)
+      if response:
+        logger.info(f"Record {record_id} metadata: {json.dumps(response, indent=2)}")
+      else:
+        logger.info(f"Record {record_id} not found.")
 
   except Exception as e:
     logger.error(f"An unexpected error occurred: {e}", exc_info=True)

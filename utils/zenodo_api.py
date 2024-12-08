@@ -1,102 +1,67 @@
-import requests
 import logging
-import json
+import os
+from inveniordm_py.client import InvenioAPI
 
 logger = logging.getLogger("zenodo_api")
 
+
 class ZenodoAPI:
   """
-  A class to interact with the Zenodo InvenioRDM API.
+  Custom wrapper for the InvenioRDM API client to handle Zenodo API requests.
   """
 
-  def __init__(self, config):
+  def __init__(self, base_url=None, access_token=None, **kwargs):
     """
-    Initialize the ZenodoAPI class.
-    
-    Args:
-      config (dict): The configuration dictionary from `zenodo_config.json`.
-    """
-    try:
-      self.base_url = config.get("base_url", "").rstrip('/')
-      self.access_token = config.get("access_token", None)
-      if not self.base_url:
-        raise ValueError("Base URL for Zenodo API is not defined. Please check your configuration.")
+    Initialize the ZenodoAPI wrapper.
 
-      self.headers = {
-        "Authorization": f"Bearer {self.access_token}" if self.access_token else "",
-        "Content-Type": "application/vnd.inveniordm.v1+json",
-        "Accept": "application/vnd.inveniordm.v1+json"
-      }
-      logger.info(f"ZenodoAPI initialized with base URL: {self.base_url}")
+    Args:
+      base_url (str, optional): Base URL of the Zenodo API (defaults to env `ZENODO_BASE_URL`).
+      access_token (str, optional): Access token for authentication (defaults to env `ZENODO_ACCESS_TOKEN`).
+      **kwargs: Additional parameters to customize the RDMClient.
+    """
+    self.base_url = base_url or os.getenv('ZENODO_BASE_URL', 'https://zenodo.org/api')
+    self.access_token = access_token or os.getenv('ZENODO_ACCESS_TOKEN', None)
+    
+    if not self.base_url:
+      raise ValueError("Base URL for Zenodo API is not defined. Check 'ZENODO_BASE_URL' environment variable.")
+    if not self.access_token:
+      logger.warning("No access token provided. API access will be limited to public endpoints.")
+
+    try:
+      self.client = InvenioAPI(
+        self.base_url,
+        self.access_token,
+      )
     except Exception as e:
-      logger.error(f"Failed to initialize ZenodoAPI: {e}", exc_info=True)
-      raise
+      logger.error(f"Failed to initialize RDMClient: {e}", exc_info=True)
+      raise e
 
-  def _make_request(self, method, endpoint, **kwargs):
-    """
-    Make a request to the Zenodo API.
-    
-    Args:
-      method (str): The HTTP method (GET, POST, PUT, DELETE).
-      endpoint (str): The endpoint to hit (relative to base_url).
-      kwargs: Additional arguments for the requests method.
-    
-    Returns:
-      dict: The JSON response from the API, or None if an error occurs.
-    """
-    url = f"{self.base_url}/{endpoint.lstrip('/')}"
-    try:
-      logger.info(f"Making {method} request to: {url} with kwargs: {kwargs}")
-      response = requests.request(method, url, headers=self.headers, **kwargs)
-      response.raise_for_status()
-      
-      try:
-        response_data = response.json()
-        return response_data
-      except json.JSONDecodeError:
-        logger.error(f"Failed to decode JSON response from {url}")
-        return None
-
-    except requests.exceptions.RequestException as e:
-      logger.error(f"Request failed for {url}: {e}", exc_info=True)
-      return None
+    logger.info(f"ZenodoAPI initialized with base_url: {self.base_url} and access_token: {'****' if self.access_token else 'None'}")
 
   def fetch_records(self, community_id, page=1, size=1000):
     """
-    Fetch records from a Zenodo community.
+    Fetch records from a specific Zenodo community.
     
     Args:
       community_id (str): The Zenodo community ID.
       page (int, optional): The page to start from.
-      size (int, optional): The number of records per page.
+      size (int, optional): The number of records to retrieve per page.
     
     Returns:
       list: A list of records from the Zenodo community.
     """
-    params = {"communities": community_id, "page": page, "size": size}
-    all_records = []
+    try:
+      response = self.client.get(f"records?communities={community_id}&page={page}&size={size}")
+      records = response.get('hits', {}).get('hits', [])
+      logger.info(f"Fetched {len(records)} records from community {community_id} (Page {page})")
+      return records
+    except Exception as e:
+      logger.error(f"Error fetching records from community {community_id}: {e}", exc_info=True)
+      return []
 
-    while True:
-      response = self._make_request("GET", "records", params=params)
-      if not response:
-        break
-
-      records = response.get("hits", {}).get("hits", [])
-      if not records:
-        logger.info("No more records to process.")
-        break
-
-      all_records.extend(records)
-      logger.info(f"Fetched {len(records)} records from page {params['page']}.")
-      
-      params["page"] += 1
-
-    logger.info(f"Total records fetched: {len(all_records)}")
-    return all_records
-
-  def get_record(self, record_id):
+  def fetch_record(self, record_id):
     """
-    Get a specific record from Zenodo.
+    Fetch a specific record by ID.
     
     Args:
       record_id (str): The ID of the record.
@@ -104,23 +69,17 @@ class ZenodoAPI:
     Returns:
       dict: The JSON response containing the record data, or None if not found.
     """
-    return self._make_request("GET", f"records/{record_id}")
-
-  def get_versions(self, concept_id):
-    """
-    Get versions of a specific concept ID.
-    
-    Args:
-      concept_id (str): The concept ID of the record.
-    
-    Returns:
-      dict: The JSON response containing the versions of the record, or None if not found.
-    """
-    return self._make_request("GET", f"records/{concept_id}/versions")
+    try:
+      response = self.client.get(f"records/{record_id}")
+      logger.info(f"Successfully fetched record {record_id}")
+      return response
+    except Exception as e:
+      logger.error(f"Error fetching record {record_id}: {e}", exc_info=True)
+      return None
 
   def update_record(self, record_id, metadata):
     """
-    Update a specific record on Zenodo.
+    Update metadata for a specific record.
     
     Args:
       record_id (str): The ID of the record to update.
@@ -129,15 +88,17 @@ class ZenodoAPI:
     Returns:
       dict: The JSON response from the update API call, or None if an error occurs.
     """
-    endpoint = f"records/{record_id}"
-    response = self._make_request("PUT", endpoint, json=metadata)
-    if response:
-      logger.info(f"Record {record_id} updated successfully.")
-    return response
+    try:
+      response = self.client.put(f"records/{record_id}", json=metadata)
+      logger.info(f"Record {record_id} updated successfully")
+      return response
+    except Exception as e:
+      logger.error(f"Error updating record {record_id}: {e}", exc_info=True)
+      return None
 
   def publish_record(self, record_id):
     """
-    Publish a specific record on Zenodo.
+    Publish a draft record on Zenodo.
     
     Args:
       record_id (str): The ID of the record to publish.
@@ -145,19 +106,28 @@ class ZenodoAPI:
     Returns:
       dict: The JSON response from the publish API call, or None if an error occurs.
     """
-    response = self._make_request("POST", f"records/{record_id}/actions/publish")
-    if response:
-      logger.info(f"Record {record_id} published successfully.")
-    return response
+    try:
+      response = self.client.post(f"records/{record_id}/actions/publish")
+      logger.info(f"Record {record_id} published successfully")
+      return response
+    except Exception as e:
+      logger.error(f"Error publishing record {record_id}: {e}", exc_info=True)
+      return None
 
-  def show_record(self, record_id):
+  def delete_record(self, record_id):
     """
-    Show the metadata for a specific record.
+    Delete a record.
     
     Args:
-      record_id (str): The ID of the record.
+      record_id (str): The ID of the record to delete.
     
     Returns:
-      dict: The JSON response for the record, or None if not found.
+      dict: The JSON response from the delete API call, or None if an error occurs.
     """
-    return self.get_record(record_id)
+    try:
+      response = self.client.delete(f"records/{record_id}")
+      logger.info(f"Record {record_id} deleted successfully")
+      return response
+    except Exception as e:
+      logger.error(f"Error deleting record {record_id}: {e}", exc_info=True)
+      return None
